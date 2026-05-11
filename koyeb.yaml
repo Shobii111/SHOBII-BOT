@@ -1,0 +1,16 @@
+name: shobii-bot
+services:
+  - name: shobii-bot
+    type: worker
+    git:
+      repository: https://github.com/Shobii111/SHOBII-BOT
+      branch: main
+    build:
+      buildpackName: nodejs
+    env:
+      - key: SESSION_ID
+        value: ""
+      - key: BOT_NAME
+        value: "SHOBII BOT"
+      - key: OWNER_NUMBER
+        value: "923270321760"
